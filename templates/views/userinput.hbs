@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+          <div class="main-content">
+
+    <form method="post" action="/weather_result">
+     {{>header}}
+     <input type="text" name="place">
+     <input type="submit" value="Find">
+     </form>
+    {{data.data}}
+         </div>
+
+    {{>footer}}
+  </body>
+</html>
